@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #e8f4e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  width: 80%;
+  height: 80%;
+  max-width: 1200px; 
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 15px; 
+}
+
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap; 
+  gap: 20px; 
+}
+
+.date {
+  font-size: 14px; 
+  color: #666; 
+}
+
+/* Search Bar */
+.search-bar {
+  position: relative;
+  width: 100%; 
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.search-bar input[type="text"] {
+  width: 100%; 
+  padding: 10px 40px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box; 
+  
+}
+
+.search-bar input[type="text"]::placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.filter-buttons button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  background-color: #f0f0f0; 
+  color: #333;
+  border-radius: 20px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-buttons button.active {
+  background-color: #28a745;
+  color: white; 
+}
+
+.filter-buttons button:hover {
+  background-color: #ccc; 
+}
+
+
+  /* Add this to your existing styles */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+}
+
+.task-buttons button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-buttons button:hover {
+  background-color: #ccc;
+}
+
+.task-input{
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
+  margin: 20px 0;
+
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  background-color: #d4edda; 
+}
+
+.add-task-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  background-color: #f0f0f0; 
+  color: #333;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-task-button:hover {
+  background-color: #ccc; 
+}
+
+/* General Input Styles */
+input[type="text"] {
+  padding: 10px 40px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]::placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+/* Task Input */
+
+
+
+.task-input input[type="text"]::placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+.add-task-button {
+  padding: 10px 20px;
+  border-radius: 12px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+}
+
+.add-task-button:hover {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+
+
